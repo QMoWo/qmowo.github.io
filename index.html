@@ -9,8 +9,15 @@
 <body>
     <!-- navigation bar ----------------------------------------------------------------- -->
     <header>
-        <div class="left_content">
-            <!-- empty space -->
+        <div class="header-button">
+            <div class="darkmode">
+                <label class="ui-switch">
+                    <input type="checkbox">
+                    <div class="turn_dark_slider">
+                      <div class="circle"></div>
+                    </div>
+                  </label>
+            </div>
         </div>
         <div class="center_content">
             <h1>Achim Duong</h1>
@@ -22,21 +29,12 @@
                 <a href="#kontakt">Kontakt</a>
             </nav>
         </div>
-        <div class="right_content">
-            <div class="darkmode">
-                <label class="ui-switch">
-                    <input type="checkbox">
-                    <div class="turn_dark_slider">
-                      <div class="circle"></div>
-                    </div>
-                  </label>
-            </div>
-        </div>
     </header>
     <!-- -------------------------------------------------------------------------- -->
      <div class="flexbox">
         
             <div class="section-container">
+
                 <section class="intro-section">
                    <div class="intro-text">
                        <h2>Über mich</h2>
@@ -56,15 +54,48 @@
                       <p><strong>Tools:</strong> Python, pandas, Scikit-Learn, Matplotlib</p>
                       <a href="#">🔗 Zum GitHub-Repo</a>
                     </div>
-                    
+
                     <div class="project-card">
                       <h3>Power BI Sales Dashboard</h3>
                       <p>Interaktives Dashboard zur Vertriebsanalyse und KPI-Visualisierung.</p>
                       <p><strong>Tools:</strong> Power BI, Excel, DAX</p>
                       <a href="#">🔗 Screenshot anzeigen</a>
                     </div>
+                </section>
+
+                <section id="lebenslauf">
+                      <h2 class="section-title">Lebenslauf</h2>
+  
+                      <p>Falls du mehr über mich wissen willst, findest du hier meinen Lebenslauf</p>
+                      <a href="lebenslauf.pdf">🔗 Lebenslauf herunterladen</a>
+                </section>
+
+                <section id="skills">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">pandas</span>
+                        <span class="skill-tag">Scikit-Learn</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                      </div>
+                </section>
+
+                <section id="kontakt">
+                    <h2 class="section-title">Kontakt</h2>
+                    <p>Du kannst mich erreichen via:</p>
+                    <ul>
+                      <li>📧 E-Mail: achim.duong@gmail.com</li>
+                      <li>🔗 <a href="https://github.com/QMoWo" target="_blank">GitHub</a></li>
+                    </ul>
                   </section>
+
             </div>
+            <footer>
+                <p>&copy; 2025 Achim Duong | Impressum | Datenschutz</p>
+            </footer>
 
      </div>
 </body>
