@@ -127,16 +127,45 @@ footer{
   width: 100%;
 }
 
+a {
+  color: #6254de; /* Helles Gelb für bessere Sichtbarkeit */
+}
+
+a:hover {
+  color: #3352ee; /* Orange für den Hover-Effekt */
+}
 
 
 
 
+body.dark-mode {
+  background: #121212;
+  color: #f1f1f1;
+}
 
+body.dark-mode header {
+  background-color: #1f3b6d;
+}
 
+body.dark-mode .project-card {
+  background: #1e1e1e;
+}
 
+body.dark-mode .skill-tag {
+  background-color: #2a2a2a;
+}
 
+body.dark-mode footer {
+  color: #aaaaaa;
+}
 
+body.dark-mode a {
+  color: #ffcc00; /* Helles Gelb für bessere Sichtbarkeit */
+}
 
+body.dark-mode a:hover {
+  color: #ffaa00; /* Orange für den Hover-Effekt */
+}
 
 
 
