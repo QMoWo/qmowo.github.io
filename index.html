@@ -54,7 +54,7 @@
                       <h3>Data Analysis: New York City Vehicle Crashes</h3>
                       <p>Im 2. Semester habe ich mich intensiv mit der Visualisierung von Daten beschäftigt. Der Fokus lag auf der Nutzung bewährter Bibliotheken wie pandas und Plotly Express sowie auf der Erkundung neuer Tools wie Plotly Dash für interaktive Dashboards und Leaflet für die kartografische Darstellung von Daten.</p>
                       <p><strong>Tools:</strong> Python, pandas, plotly express, plotly dash, leaflet</p>
-                      <a href="images/NYC-Vehicle-Crashes_1.png">🔗 Screenshot anzeigen</a>
+                      <a href="#" onclick="openModal(['images/NYC-Vehicle-Crashes_1.png', 'images/NYC-Vehicle-Crashes_2.png', 'images/NYC-Vehicle-Crashes_3.png'])">🔗 Screenshots anzeigen</a>
                       <a href="https://github.com/QMoWo/NYC-VehicleCrashes-AnalysisProject">🔗 Zum GitHub-Repo</a> 
                     </div>
 
@@ -62,7 +62,7 @@
                       <h3>Analyse der Luftqualität mit Geodaten</h3>
                       <p>In diesem Projekt habe ich ein interaktives Dashboard entwickelt, das verschiedene Visualisierungen zur Luftqualität in Deutschland über verschiedene Standorte und Zeiträume hinweg darstellt. Zusätzlich wurde im Team ein Modell entwickelt zur Vorhersage der Luftqualität an selbstgewählten Standorten erstellt.</p>
                       <p><strong>Tools:</strong> Python, Scikit-learn, Plotly Dash, Folium</p>
-                      <a href="#">🔗 Screenshot anzeigen</a>
+                      <a href="#" onclick="openModal(['images/projekt1_1.png', 'images/projekt1_2.png', 'images/projekt1_3.png'])">🔗 Screenshots anzeigen</a>
                       <a href="https://github.com/Fxvdi/umweltmonitoring-project">🔗 Zum GitHub-Repo</a>
                     </div>
 
@@ -70,7 +70,7 @@
                         <h3>Konzept eines Datenflusses</h3>
                         <p>In diesem Projekt habe ich die Konzepte von Data Warehouses und Data Lakes analysiert und darauf basierend ein prototypisches Konzept zur Datenverarbeitung entwickelt. Dabei lag der Fokus auf der Modellierung eines Datenflusses, der die Integration, Speicherung und Verarbeitung großer Datenmengen veranschaulicht. Wichtige Aspekte waren das Verständnis von ETL-Prozessen (Extract, Transform, Load) sowie der Umgang mit skalierbaren Architekturen wie Hadoop und verteilten Speichersystemen zur effizienten Verarbeitung großer Datenbestände.</p>
                         <p><strong>Tools:</strong> Google Cloud Platform, Spark, Hadoop, Python, Pandas, ETL-Processing</p>
-                        <a href="#">🔗 Screenshot anzeigen</a>
+                        <a href="#" onclick="openModal(['images/projekt1_1.png', 'images/projekt1_2.png', 'images/projekt1_3.png'])">🔗 Screenshots anzeigen</a>
                         <a href="https://github.com/QMoWo/NYC-VehicleCrashes-AnalysisProject">🔗 Zum GitHub-Repo</a>
                     </div>
 
@@ -80,7 +80,7 @@
                             <br><br>
                             Zusätzlich habe ich einen prototypischen Empfehlungsdienst programmiert, der basierend auf historischen Bestellungen vorhersagt, welche Produkte einem bestimmten Kunden gefallen könnten. Dieser Ansatz nutzt Methoden des Collaborative Filtering und ermöglicht eine personalisierte Produktempfehlung zur Steigerung der Kundenbindung und des Umsatzes.</p>
                         <p><strong>Tools:</strong> Google Cloud Platform, Spark, Hadoop, Python, Pandas, ETL-Processing</p>
-                        <a href="#">🔗 Screenshot anzeigen</a>
+                        <a href="#" onclick="openModal(['images/projekt1_1.png', 'images/projekt1_2.png', 'images/projekt1_3.png'])">🔗 Screenshots anzeigen</a>
                         <a href="https://github.com/QMoWo/NYC-VehicleCrashes-AnalysisProject">🔗 Zum GitHub-Repo</a>
                     </div>
 
@@ -90,7 +90,7 @@
                             <br><br>
                             Ein weiterer Schwerpunkt des Projekts lag darauf, erste Erfahrungen im Feature Engineering zu sammeln. Dazu wurden verschiedene Merkmale wie Wetterdaten, saisonale Einflüsse und zeitliche Trends extrahiert und analysiert, um die Vorhersagequalität des Modells zu verbessern.</p>
                         <p><strong>Tools:</strong> Scikit-Learn, Python, Pandas</p>
-                        <a href="#">🔗 Screenshot anzeigen</a>
+                        <a href="#" onclick="openModal(['images/projekt1_1.png', 'images/projekt1_2.png', 'images/projekt1_3.png'])">🔗 Screenshots anzeigen</a>
                         <a href="https://github.com/QMoWo/NYC-VehicleCrashes-AnalysisProject">🔗 Zum GitHub-Repo</a>
                         <a href="https://hka-dscb.de/">🔗 Link zur Website</a>
                     </div>
@@ -99,9 +99,18 @@
                         <h3>Prototypische Website als Linksammlung für die Hochschule Karlsruhe</h3>
                         <p>Auf Basis von Umfragen und Fokusgruppen wurde eine hohe Nachfrage nach einer zentralen Sammelstelle für alle relevanten Webseiten rund um das Studentenleben identifiziert. In diesem Projekt habe ich eine Plattform entwickelt, die wichtige Online-Ressourcen für Studierende übersichtlich bündelt. Ziel war es, den Zugang zu studienrelevanten Informationen, Verwaltungstools und Community-Plattformen zu erleichtern.</p>
                         <p><strong>Tools:</strong> Html, Css, JavaScript</p>
-                        <a href="#">🔗 Screenshot anzeigen</a>
+                        <a href="#" onclick="openModal(['images/projekt1_1.png', 'images/projekt1_2.png', 'images/projekt1_3.png'])">🔗 Screenshots anzeigen</a>
                         <a href="https://github.com/QMoWo/NYC-VehicleCrashes-AnalysisProject">🔗 Zum GitHub-Repo</a>
                     </div>
+
+                    <!-- Modal-Fenster für alle Projekte -->
+                    <div id="imageModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <button class="prev" onclick="prevImage()">⬅</button>
+                        <img class="modal-content" id="modalImage">
+                        <button class="next" onclick="nextImage()">➡</button>
+                    </div>
+                    
                 </section>
 
                 <section id="lebenslauf">

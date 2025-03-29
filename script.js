@@ -19,3 +19,40 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+let currentImages = [];
+let currentIndex = 0;
+
+function openModal(images) {
+    currentImages = images;
+    currentIndex = 0;
+    updateModalImage();
+    document.getElementById("imageModal").style.display = "flex";
+}
+
+function updateModalImage() {
+    document.getElementById("modalImage").src = currentImages[currentIndex];
+}
+
+function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+}
+
+function nextImage() {
+    currentIndex = (currentIndex + 1) % currentImages.length;
+    updateModalImage();
+}
+
+function prevImage() {
+    currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+    updateModalImage();
+}
+
+// Schließen des Pop-ups, wenn außerhalb geklickt wird
+window.onclick = function (event) {
+    const modal = document.getElementById("imageModal");
+    if (event.target === modal) {
+        closeModal();
+    }
+};
